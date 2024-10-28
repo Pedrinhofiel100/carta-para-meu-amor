@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta para Isabelly</title>
+  <style>
+    /* Estilo do vídeo de fundo */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: blur(5px) brightness(60%); /* Efeito para deixar o texto legível */
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+    }
+    .content-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      max-width: 800px;
+      z-index: 1; /* Para que o texto fique acima do vídeo */
+    }
+    .content {
+      background: rgba(0, 0, 0, 0.6); /* Fundo transparente escuro para destacar o texto */
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 0;
+    }
+    .photos {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+    }
+    .photos img {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+    .video-container {
+      flex: 1;
+      z-index: 2;
+    }
+    button {
+      background-color: #ff8c94;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #ff637d;
+    }
+  </style>
+</head>
+<body>
+
+  <video class="background-video" autoplay muted loop>
+    <source src="Vídeo isa.mp4" type="video/mp4"> <!-- Link para o vídeo de fundo -->
+    Seu navegador não suporta a reprodução de vídeo.
+  </video>
+
+  <div class="photos">
+    <img src="Imagem do WhatsApp de 2024-10-27 à(s) 20.47.47_b97542ed.jpg" alt="Foto 1">
+    <img src="Imagem do WhatsApp de 2024-10-27 à(s) 20.48.57_3386f68f.jpg" alt="Foto 2">
+    <img src="Imagem do WhatsApp de 2024-10-27 à(s) 20.49.35_0604fe7b.jpg" alt="Foto 3">
+  </div>
+
+  <div class="content-container">
+    <div class="content">
+      <h1>De Pedro Henrique para Isabelly</h1>
+      <p>Isa, você é o amor da minha vida. Sei que está sendo difícil conviver comigo, me desculpa por tudo que te fiz e faço, sei que exagero em algumas coisas e sei que sou muito cansativo pelo motivo de ser grudento.</p>
+      <p>Realmente aquilo me machucou muito, chorei igual uma criança quando vi aquilo, mas entendo e respeito seus sentimentos por ele. Ele ficou 3 anos na sua vida, esteve ao seu lado nos momentos mais difíceis.</p>
+      <p>Eu fiz esse site para expressar o que sinto, através da minha paixão por programação. Espero que você leia isso, Isa, porque eu quero muito dar certo com você. Sei que você está brava e cansada comigo.</p>
+      <p>Você é minha princesa, e eu tenho muitos sentimentos por você. Sei que será difícil para nós nos acertarmos, mas nunca vou desistir de você. Sonho em ver você de branco, vindo em minha direção, dizendo 'aceito'.</p>
+      <p>Me desculpa mais uma vez por ter agido assim, eu estava o dia inteiro esperando você pra conversar, porque é a única pessoa que eu tenho, e quando entro no Instagram e vejo aquilo... Eu perdi o rumo.</p>
+      <p>Se você leu tudo isso, venha conversar comigo. Estou com saudades da minha princesa, quero saber como foi seu dia, ver uma foto sua, seu cabelo, uma roupa nova. Ultimamente estou tão sozinho, mas quando vejo sua notificação, tudo muda.</p>
+      <button onclick="window.location.href=https//www.tiktok.com/@pedro_morales.i?_t=8quEoozvcbl&_r=1">Conversar Comigo</button>
+    </div>
+
+    <div class="video-container">
+      <video width="300" height="auto" controls>
+        <source src="bruno mars.mp4" type="video/mp4"> <!-- Link para o vídeo ao lado -->
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="Lady Gaga, Bruno Mars - Die With A Smile.mp3" type="audio/mpeg"> <!-- Coloque o link da música de fundo -->
+    Seu navegador não suporta a reprodução de música.
+  </audio>
+
+</body>
+</html>
